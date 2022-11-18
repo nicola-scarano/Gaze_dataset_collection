@@ -1,0 +1,31 @@
+How to save share and install existing virtual environments using anaconda (pyhton)
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment
+
+# How to save your environment
+1. open Anaconda promt
+
+2. Activate the environment you want to save/share 
+	"conda activate myenv"  --> replace 'myenv' with the correct environment name 
+
+3. Navigate to the directory in which you want to save the environment
+	"cd C:\Users\User1" --> navigate to the location of your choice 
+
+4. Save the environment
+	"conda env export > environment.yml" --> change the name of the .yml file to the name of your choice. 
+
+
+# How to install an environment from a .yml file. 
+
+# How to save your environment
+1. open Anaconda promt
+
+2. Navigate to the location of the .yml file. 
+	"cd C:\Users\User1" --> navigate to the location of your choice 
+
+3. Install the environment.
+	"conda env create -f environment_py36_Eyetracking.yml"--> change the name of the .yml file to the name of your environment file.
+	Note: The first line of the yml file sets the new environment's name.
+
+4. Activate the new environment. 
+	"conda activate myenv"  --> replace 'myenv' with the correct environment name 
